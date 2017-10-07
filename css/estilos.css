@@ -20,7 +20,8 @@ body {
     transition: all ease 1s;
 }
 .logo img {
-    width: 220px;
+    width: 200px;
+    margin: 20px 0;
     text-align: center;
     transition: all ease 1s;
 }
@@ -29,7 +30,7 @@ body {
         margin-left: 100px;
     }
     .logo img {
-        width: 300px;        
+        width: 200px;        
     }
 }
 .capa_oscura_body {
