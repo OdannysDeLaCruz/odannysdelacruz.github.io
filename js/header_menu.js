@@ -20,11 +20,11 @@ $(document).ready(function(){
                     $(".menu").css('background', '#01579b');
                     $(".menu").css('paddingTop', '0px');
                 }       
-                else {
+                if( $(window).scrollTop() == 0 ) {
 
                     $(".logotipo").css('top', '25px');
-                    $(".logotipo").css('width', '250px');
-                    $(".logotipo").css('position', 'absolute');
+                    $(".logotipo").css('width', '300px');
+                    $(".logotipo").css('position', 'relativa');
 
                     $(".menu").css('background', 'transparent');    
                     $(".menu").css('paddingTop', '20px');   
@@ -33,36 +33,35 @@ $(document).ready(function(){
             });
         }
     }
-
     verificarTamano();
-
-    $(window).resize(function() {
-        verificarTamano();
+    $(window).resize(function(){
+    	verificarTamano();
     });
 
-// EFECTOS PARA LOS SKILL
-let trigger = true;
-$(window).on("scroll", function(){
-	if(($(window).scrollTop() >= 780) && (trigger)){
-		trigger = false;
-		let rangos = document.getElementsByClassName('rangos');
-		for(let rango of rangos){ 
-				let elRango = rango;
-				let idRango = rango.getAttribute('id');
-				conteo(elRango, idRango);
+
+	// EFECTOS PARA LOS SKILL
+	let trigger = true;
+	$(window).on("scroll", function(){
+		if(($(window).scrollTop() >= 780) && (trigger)){
+			trigger = false;
+			let rangos = document.getElementsByClassName('rangos');
+			for(let rango of rangos){ 
+					let elRango = rango;
+					let idRango = rango.getAttribute('id');
+					conteo(elRango, idRango);
+			}
+			function conteo(el, num) {
+				var cont = 0;
+				var id = setInterval(function(){
+					el.innerHTML = cont + ' %';
+					cont++;
+					if(cont > num) {
+						clearInterval(id);
+					}
+				}, 70);
+			}
 		}
-		function conteo(el, num) {
-			var cont = 0;
-			var id = setInterval(function(){
-				el.innerHTML = cont + ' %';
-				cont++;
-				if(cont > num) {
-					clearInterval(id);
-				}
-			}, 70);
-		}
-	}
-});
+	});
 
 
 });
