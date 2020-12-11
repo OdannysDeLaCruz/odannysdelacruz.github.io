@@ -3,67 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Odannys De La Cruz"/>
-    <meta name="descripcion" content="pagina de bienvenida e inicio de odannysdelacruz.com, propiedad de Odannys De La Cruz, diseñador y desarrolador web, html, html5, css,css3, javascript, php, php7, python, pagina para dar o impartir tutoriales y cursos de programacion web"/>
-    <meta name="keywords" content="html - html5, css - css3, javascript, php - php7, python, videos, blog de programacion, tutoriales web, consejos web, programacion, tags, enlaces, diseño web"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="descripcion" content="Página web personal y portafolio de Odannys De La Cruz, Fullstack Web Developer con base en Colombia."/>
+    <meta name="keywords" content="fullstack, odannys de la cruz, odannys, portafolio de odannys de la cruz, pagina de odannys de la cruz"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Odannys De La Cruz</title>
-    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <div class="capa_oscura_body"></div>
-    <section class="logo">
-        <a href="http://localhost:7880/">            
-        <img src="img/logotipo.png" alt="logotipo de Odannys De La Cruz">
-        </a>
-    </section>
-    <section class="container text-center contenedor_logos">
-        <section class="row item_contenedor_logos">
-            <img src="img/logos/css3.png" class="col-xs-3 item_logo" alt="logo css3">
-            <img src="img/logos/git.png" class="col-xs-3 item_logo" alt="logo git">
-            <img src="img/logos/php7.png" class="col-xs-3 item_logo" alt="logo php">
-            <img src="img/logos/html5.png" class="col-xs-3 item_logo" alt="logo html5">
-        </section>
-        <section class="row item_contenedor_logos">
-            <img src="img/logos/jquery.png" class="col-xs-3 item_logo" alt="logo jquery">
-            <img src="img/logos/mysql.png" class="col-xs-3 item_logo" alt="logo javascript">
-            <img src="img/logos/mysql.png" class="col-xs-3 item_logo" alt="logo mysql">
-            <img src="img/logos/python.png" class="col-xs-3 item_logo" alt="logo python">
-        </section>
-    </section>
-    <section class="contenedor_banner">
-        <div class="img_bienvenida"></div>
-        <section class="informacion">
-            <div class="items_info">
-                <h2>FRONTEND DESIGNER</h2>
-                <h2>BACKEND DEVELOPER</h2>
+    <header class="header">
+        <!-- <a href="index.html">
+            <img class="header_logo" src="img/logotipo.svg" alt="Odannys De La Cruz">
+        </a> -->
+        <nav class="header_nav">
+            <!-- <div class="header_nav_bars">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> -->
+            <ul class="header_nav_ul">
+                <li class="header_nav_li"><a class="header_nav_links" href="">Home</a></li>
+                <li class="header_nav_li"><a class="header_nav_links" href="">Habilidades</a> </li>
+                <li class="header_nav_li"><a class="header_nav_links" href="">Proyectos</a></li>
+                <li class="header_nav_li"><a class="header_nav_links" href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="row main">
+        <section class="col-12 col-sm-5 foto_perfil">
+            <canvas class="foto_perfil_particulas particulas_fondo"></canvas>
+            <div class="foto_perfil_contenedor">
+                <h1 class="foto_perfil_texto">Hola!</h1>
+                <figure class="foto_perfil_img">
+                    <img src="img/perfil.png" alt="Foto de Odannys De La Cruz | Frontend web developer">
+                </figure>                
             </div>
-            <div class="items_info">
-                <p>HOLA, SOY ODANNYS DE LA CRUZ</p>
-                <p>BIENVENIDO</p>
-            </div>            
+            <canvas class="foto_perfil_particulas particulas_frente"></canvas>
         </section>
-        <img src="img/Banner.png" class="banner" width="100" alt="banner de bienvenida">
-    </section> 
+        <section class="col-12 col-sm-7 perfil_info">
+            <div class="perfil_info_contenedor">
+                <h1 class="perfil_info_nombre">Soy Odannys</h1>
+                <h2 class="perfil_info_cargo">Frontend Web Developer</h2>
+                <p class="perfil_info_resumen">
+                    Fullstack Web Developer con base en Colombia, escribo código desde el 2015 (4 años resolviendo problemas con código como autodidacta + 2 años como profesional freelance), me gusta el desarrollo de software en general, pero me apasiona el desarrollo web, interfaces límpias y escribír código que funcione, actualmente soy freelance y me encuentro estudiando en <a target="_blank" href="https://platzi.com/p/odannysdelacruz/">Platzi.com</a>, en mi flujo de trabajo desarrollo con tecnologias como <strong>Html5, Css3 (Bootstrap), Js (Jquery, React, Webpack, Node, Npm), Git y Github, Php (Laravel), Mysql, Heroku y mucho mas.</strong>
+                </p>
 
-    <section class="contenedor_menu">
-            <div class="item_menu acerca">
-               <a href="acerca.html"><button class="boton_menu">ACERCA DE MI</button></a>
+                <div class="perfil_info_redes">
+                    <p>Encuentrame en:</p>
+                    <ul class="perfil_info_redes_ul">
+                        <li>
+                            <a class="perfil_info_redes_link" target="_blank" href="https://github.com/odannysdelacruz">
+                                <img src="img/iconos/git.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="perfil_info_redes_link" target="_blank" href="https://www.linkedin.com/in/odannys-de-la-cruz-827a90135/">
+                                <img src="img/iconos/in.svg">
+                            <a>
+                        </li>
+                        <li>
+                            <a class="perfil_info_redes_link" target="_blank" href="https://www.instagram.com/odannys.codes/">
+                                <img src="img/iconos/instagram.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="item_menu portafolio">
-                <a href="portafolio.html" ><button class="boton_menu">PORTAFOLIO</button></a>
+            <div class="perfil_info_footer">
+                <p>Designed by Odannys De La Cruz</p>             
             </div>
-            <div class="item_menu blog">
-               <a href="blog.html" ><button class="boton_menu">BLOG</button></a>
-            </div>
-            <div class="item_menu contacto">
-                <a href="contacto.html" ><button class="boton_menu">CONTACTO</button></a>
-            </div>
-    </section>
+        </section>
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        window.onload = function() {
+            Particles.init({
+                selector: '.particulas_fondo',
+                color: '#ffffff',
+                connectParticles: true,
+                maxParticles: 50,
+                speed: 1,
+                minDistance: 80,
+            });
+            Particles.init({
+                selector: '.particulas_frente',
+                color: '#ffffff',
+                connectParticles: true,
+                maxParticles: 30,
+                // speed: 2,
+                minDistance: 50,
+            })
+
+            let links = document.querySelectorAll('.header_nav_links')
+            links.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault()
+                    swal({
+                      title: "Vaya!",
+                      text: "Sé que quieres ver más de este increíble sítio, pero justo en este momento estoy renovando algunas paginas como la de habilidades, portafolio y contacto. Pero ánimo, ya está casi listo!",
+                      icon: "info",
+                      button: "Ok, entiendo!",
+                    });
+                })
+
+            })
+        }
+    </script>
     
 </body>
 </html>

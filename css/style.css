@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+:root {
+	font-size: 16px;
+	--text-color: #1a1a1a;
+	--bg-color: #003380;
+}
+
+body {
+	background: #fff;
+}
+
+/*--Inicio header--*/
+.header {
+	position: relative;
+	z-index: 10;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 20px;
+	height: 80px;
+	width: 100%;
+}
+.header_logo {
+	width: 100px;
+}
+.header_nav {
+	position: sticky;
+	width: 100%;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+}
+/*.header_nav_bars {
+	width: 38px;
+	height: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+	cursor: pointer;
+}
+.header_nav_bars > span {
+	width: 100%;
+	height: 3px;
+	background: #fff;
+}
+.header_nav_bars > span:nth-child(2) {
+	width: 85%;
+}*/
+.header_nav_ul {
+	margin: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header_nav_links {
+	text-decoration: none;
+	margin: 0px 10px;
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.header_nav_links:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+/*--Fin header--*/
+/*--Inicio Main--*/
+.main {
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.foto_perfil {
+	background: var(--bg-color);
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+}
+.foto_perfil_contenedor {
+	position: relative;
+	padding: 20px;
+	margin-top: 130px;
+}
+.foto_perfil_particulas {
+	position: absolute; 
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+.particulas_fondo {
+	z-index: 0;
+}
+.particulas_frente {
+	z-index: 3;
+}
+.foto_perfil_texto {
+	position: absolute;
+	z-index: 1;
+	top: -25px;
+	left: 0;
+	font-size: 40px;
+	color: #fff;
+	font-weight: 700;
+}
+.foto_perfil_img {
+	width: 200px;
+}
+.foto_perfil_img > img {
+	width: 100%;
+	transform: rotate(-5deg);
+}
+/*---------------*/
+.perfil_info {
+	padding-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.perfil_info_contenedor {
+	padding: 10px;
+	margin-top: 30px;
+}
+.perfil_info_nombre {
+	font-size: 60px;
+	margin: 0px;
+	font-weight: 800;
+	color: var(--text-color);
+}
+.perfil_info_cargo {
+	font-size: 23px;
+	padding: 5px 10px;
+	margin: 5px 0 40px 0;
+	font-weight: 400;
+	color: #fff;
+	background: var(--bg-color);
+}
+.perfil_info_resumen {
+	font-size: 1rem;
+	color: var(--text-color);
+	line-height: 25px;
+}
+.perfil_info_redes {
+	margin-top: 30px;
+}
+.perfil_info_redes > p {
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.perfil_info_redes_ul {
+	list-style: none;
+	display: flex;
+}
+.perfil_info_redes_ul > li {
+	margin-right: 15px;
+}
+.perfil_info_redes_link > img {
+	width: 25px;
+	/*color: var(--text-color);*/
+	color: red;
+}
+.perfil_info_footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
+}
+.perfil_info_footer > p {
+	font-size: 13px;
+	font-weight: 400;
+	margin: 0;
+	color: #A0A0A0;	
+	text-align: center;
+}
+/*--Fin Main--*/
+
+/*--Media Queries--*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+	body {
+		/*background: yellow;*/
+	}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	body {
+		/*background: green;*/
+	}
+	.foto_perfil {
+		height: 100vh;
+	}
+	.perfil_info {
+		height: 100vh;
+		padding-bottom: 0px;
+	}
+	.perfil_info_contenedor {
+		margin-top: 50px;
+	}
+	.header_nav_ul {
+		justify-content: flex-end;
+	}
+	.header_nav_links {
+		color: var(--text-color);
+		font-size: 16px;
+		font-weight: 700;
+	}
+	.header_nav_links:hover {
+		text-decoration: underline;
+		color: var(--text-color);
+	}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	body {
+		/*background: blue;*/
+	}
+	.foto_perfil_img {
+		width: 250px;
+	}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	body {
+		/*background: red;*/
+	}
+	.foto_perfil_img {
+		width: 300px;
+	}
+	.perfil_info_nombre {
+		font-size: 80px;
+	}
+	.perfil_info_cargo {
+		font-size: 30px;
+	}
+}
