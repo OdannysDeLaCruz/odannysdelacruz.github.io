@@ -13,19 +13,52 @@
 	--bg-color: #003380;
 }
 
+/*--Cambio de color al boton a SweetAlert--*/
+.swal-button:not([disabled]):hover,
+.swal-button:active,
+.swal-button {
+    background-color: var(--bg-color);
+}
+.swal-title {
+	font-weight: 700;
+	color: var(--text-color);
+}
+.swal-button {
+	font-size: 16px;
+}
+.swal-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.swal-icon {
+    width: 50px;
+    height: 50px;
+}
+.swal-icon--info:before {
+    width: 5px;
+    height: 19px;
+    bottom: 10px;
+}
+.swal-icon--info:after {
+    width: 6px;
+    height: 5px;
+    top: 10px;
+}
+
 body {
 	background: #fff;
 }
 
 /*--Inicio header--*/
 .header {
+	background:  linear-gradient(to bottom, var(--bg-color), var(--bg-color), transparent);
 	position: relative;
 	z-index: 10;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 20px;
 	height: 80px;
 	width: 100%;
 }
@@ -60,14 +93,20 @@ body {
 	margin: 0;
 	list-style: none;
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
+}
+.header_nav_li {
+	width: 50%;
+	padding: 5px 0;
+	text-align: center;
 }
 .header_nav_links {
 	text-decoration: none;
-	margin: 0px 10px;
+	/*margin: 0px 10px;*/
 	color: white;
-	font-size: 15px;
+	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 500;
 }
@@ -193,15 +232,21 @@ body {
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
-	body {
-		/*background: yellow;*/
+	.header_nav_ul {
+		justify-content: space-around;
+	}
+	.header_nav_li {
+		width: auto;
+		padding: 5px 0;
+		text-align: center;
 	}
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-	body {
-		/*background: green;*/
+	.header {
+		background: transparent;
+		padding: 20px 20px;
 	}
 	.foto_perfil {
 		height: 100vh;
@@ -215,6 +260,11 @@ body {
 	}
 	.header_nav_ul {
 		justify-content: flex-end;
+	}
+	.header_nav_li {
+		width: auto;
+		margin-left: 10px;
+		text-align: center;
 	}
 	.header_nav_links {
 		color: var(--text-color);
