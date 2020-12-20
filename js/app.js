@@ -1,5 +1,5 @@
 window.onload = function() {
-    let links = document.querySelectorAll('.header_nav_links')
+    let links = document.querySelectorAll('.sin-permiso')
     links.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault()
