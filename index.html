@@ -84,40 +84,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script>
-        window.onload = function() {
-            Particles.init({
-                selector: '.particulas_fondo',
-                color: '#ffffff',
-                connectParticles: true,
-                maxParticles: 50,
-                speed: 1,
-                minDistance: 80,
-            });
-            Particles.init({
-                selector: '.particulas_frente',
-                color: '#ffffff',
-                connectParticles: true,
-                maxParticles: 30,
-                // speed: 2,
-                minDistance: 50,
-            })
-
-            let links = document.querySelectorAll('.sin-permiso')
-            links.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault()
-                    swal({
-                      title: "Vaya!",
-                      text: "Sé que quieres ver más de este increíble sítio, pero justo en este momento estoy renovando algunas paginas como la de habilidades, portafolio y contacto. Pero ánimo, ya está casi listo!",
-                      icon: "info",
-                      button: "Ok, entiendo!",
-                    });
-                })
-
-            })
-        }
-    </script>
+    <script src="js/app.js"></script>
     
 </body>
 </html>

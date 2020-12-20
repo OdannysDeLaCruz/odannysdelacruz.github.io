@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Odannys De La Cruz | Frontend Web Developer</title>
+    <title>Portafolio | Odannys De La Cruz</title>
 </head>
 <body>
     <header class="header header_v2">
@@ -27,34 +27,46 @@
                 <p class="portafolio_texto">Aquí podras revisar los resultados finales de cada proyecto dando click en su respectivo enlace. <strong><i>Si lo que buscas es ver como está construido puedes verlos todos en mi <a target="_blank" href="https://github.com/odannysdelacruz">repositorio de GitHub</a></i></strong></p>
             </article>
             <section class="portafolio_proyectos">
+                <!-- Innova -->
                 <figure class="portafolio_content_img">
-                    <a class="portafolio_link" href="" title="Ver proyecto conferencia ConfJS en Colombia">
-                        <img class="portafolio_img" src="img/proyectos/12.jpg" alt="Logo Oficial de la conferencia ConfJS en Colombia">
-                        <figcaption class="portafolio_nombre"><i>Conferencia ConfJS en Colombia</i></figcaption>
+                    <a target="_blank" class="portafolio_link" href="https://innovainc.co/home" title="Ver proyecto Innova Inc Soluciones">
+                        <img class="portafolio_img" src="img/proyectos/3.png" alt="Logo E-Commerce Innova Inc Soluciones">
+                        <figcaption class="portafolio_nombre"><i>E-Commerce Innova Inc Soluciones</i></figcaption>
                     </a>
                 </figure>
+                <!-- Balabike -->
                 <figure class="portafolio_content_img">
-                    <a class="portafolio_link" href="" title="Ver proyecto conferencia ConfJS en Colombia">
-                        <img class="portafolio_img" src="img/proyectos/12.jpg" alt="Logo Oficial de la conferencia ConfJS en Colombia">
-                        <figcaption class="portafolio_nombre"><i>Conferencia ConfJS en Colombia</i></figcaption>
+                    <a target="_blank" class="portafolio_link" href="https://balabike.netlify.app" title="Ver proyecto Bala Bike">
+                        <img class="portafolio_img" src="img/proyectos/1.png" alt="Logo Tienda Virtual Bala Bike">
+                        <figcaption class="portafolio_nombre"><i>Tienda Virtual Bala Bike</i></figcaption>
                     </a>
                 </figure>
+                <!-- Brunette -->
                 <figure class="portafolio_content_img">
-                    <a class="portafolio_link" href="" title="Ver proyecto conferencia ConfJS en Colombia">
-                        <img class="portafolio_img" src="img/proyectos/12.jpg" alt="Logo Oficial de la conferencia ConfJS en Colombia">
-                        <figcaption class="portafolio_nombre"><i>Conferencia ConfJS en Colombia</i></figcaption>
+                    <a target="_blank" class="portafolio_link" href="http://brunettege.herokuapp.com/" title="Ver proyecto Brunette Girl Extensiones">
+                        <img class="portafolio_img" src="img/proyectos/2.png" alt="Logo Tienda Virtual Brunette Girl Extensiones">
+                        <figcaption class="portafolio_nombre"><i>Tienda Virtual Brunette Girl Extensiones</i></figcaption>
                     </a>
                 </figure>
+                <!-- Lejac -->
                 <figure class="portafolio_content_img">
-                    <a class="portafolio_link" href="" title="Ver proyecto conferencia ConfJS en Colombia">
-                        <img class="portafolio_img" src="img/proyectos/12.jpg" alt="Logo Oficial de la conferencia ConfJS en Colombia">
-                        <figcaption class="portafolio_nombre"><i>Conferencia ConfJS en Colombia</i></figcaption>
+                    <a target="_blank" class="portafolio_link" href="#">
+                        <img class="portafolio_img" src="img/proyectos/4.png" alt="Logo Lejac Abogados">
+                        <figcaption class="portafolio_nombre"><i>Lejac | Servicios Juridicos Inmobiliarios y Financieros</i></figcaption>
                     </a>
                 </figure>
+                <!-- Bisagra -->
                 <figure class="portafolio_content_img">
-                    <a class="portafolio_link" href="" title="Ver proyecto conferencia ConfJS en Colombia">
-                        <img class="portafolio_img" src="img/proyectos/12.jpg" alt="Logo Oficial de la conferencia ConfJS en Colombia">
-                        <figcaption class="portafolio_nombre"><i>Conferencia ConfJS en Colombia</i></figcaption>
+                    <a target="_blank" class="portafolio_link" href="https://bisagra.netlify.app/">
+                        <img class="portafolio_img" src="img/proyectos/5.png" alt="Logo Bisagra Soluciones">
+                        <figcaption class="portafolio_nombre"><i>Bisagra</i></figcaption>
+                    </a>
+                </figure>
+                <!-- Netflix clone -->
+                <figure class="portafolio_content_img">
+                    <a target="_blank" class="portafolio_link" href="https://my-netflix-clone.netlify.app">
+                        <img class="portafolio_img" src="img/proyectos/6.png" alt="">
+                        <figcaption class="portafolio_nombre"><i>My Netflix Clone</i></figcaption>
                     </a>
                 </figure>
             </section>
@@ -68,23 +80,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script>
-        window.onload = function() {
-            let links = document.querySelectorAll('.header_nav_links')
-            links.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault()
-                    swal({
-                      title: "Vaya!",
-                      text: "Sé que quieres ver más de este increíble sítio, pero justo en este momento estoy renovando algunas paginas como la de habilidades, portafolio y contacto. Pero ánimo, ya está casi listo!",
-                      icon: "info",
-                      button: "Ok, entiendo!",
-                    });
-                })
-
-            })
-        }
-    </script>
+    <script src="js/app.js"></script>
     
 </body>
 </html>
