@@ -146,6 +146,8 @@ body {
 	top: 0;
 }
 .foto_perfil_contenedor {
+	display: flex;
+    flex-direction: column;
 	position: relative;
 	padding: 20px;
 	margin-top: 130px;
@@ -165,7 +167,7 @@ body {
 }
 .foto_perfil_texto {
 	position: absolute;
-	z-index: 1;
+	z-index: 4;
 	top: -25px;
 	left: 0;
 	font-size: 40px;
@@ -176,9 +178,49 @@ body {
 	width: 200px;
 }
 .foto_perfil_img > img {
+	position: relative;
 	width: 100%;
 	transform: rotate(-5deg);
+	z-index: 3;
 }
+.foto_perfil_button {
+	position: relative;
+	z-index: 4;
+	border: none;
+	background: none;
+	margin-top: 20px;
+}
+.foto_perfil_link {
+	position: relative;
+	font-size: 14px;
+	letter-spacing: 1.5px;
+	font-weight: 600;
+	padding: 15px 40px;
+	background: var(--bg-color);
+	color: var(--principal-color);
+	border-radius: 125px;
+	height: 20px;
+	top: 0px;
+	opacity: 1;
+
+	animation: aparecer 3s;
+	animation: mover_boton 3s infinite alternate;
+}
+@keyframes aparecer {
+	from {
+		top: -50px;
+		opacity: 0;
+	}
+	to {
+		top: 0px;
+		opacity: 1;
+	}
+}
+@keyframes mover_boton {
+	from { top: 0px; }
+	to { top: 8px; }
+}
+
 /*---------------*/
 .perfil_info {
 	padding-bottom: 50px;
