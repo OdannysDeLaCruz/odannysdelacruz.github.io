@@ -224,9 +224,6 @@ body {
 /*---------------*/
 .perfil_info {
 	padding-bottom: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 .perfil_info_contenedor {
 	padding: 10px;
@@ -381,10 +378,6 @@ body {
 	}
 	.foto_perfil {
 		height: 100vh;
-	}
-	.perfil_info {
-		height: 100vh;
-		padding-bottom: 0px;
 	}
 	.perfil_info_contenedor {
 		margin-top: 80px;
